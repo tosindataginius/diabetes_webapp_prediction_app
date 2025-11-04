@@ -29,9 +29,9 @@ st.markdown(
 
 # --- Helpers ---
 
-#MODEL_FILENAME = joblib.load(r"C:Users\\USER\\Downloads\\Machine\\diabetes_prediction_app\\diabetes_prediction_model.joblib")
-MODEL_FILENAME = r"C:\\Users\\USER\\Downloads\\Machine\\diabetes_prediction_app\\diabetes_prediction_model.joblib"
 
+#MODEL_FILENAME = r"C:\\Users\\USER\\Downloads\\Machine\\diabetes_prediction_app\\diabetes_prediction_model.joblib"
+MODEL_FILENAME = "diabetes_prediction_model.joblib"
 
 DEFAULT_FEATURES = [
     'Age',
