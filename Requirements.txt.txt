@@ -2,3 +2,4 @@ scikit-learn == 1.7.2
 pandas == 2.2.3
 NumPy == 2.3.4
 matplotlib == 3.10.7
+joblib == 1.4.2
