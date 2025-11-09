@@ -30,8 +30,8 @@ st.markdown(
 # --- Helpers ---
 
 
-#MODEL_FILENAME = r"C:\\Users\\USER\\Downloads\\Machine\\diabetes_prediction_app\\diabetes_prediction_model.joblib"
-MODEL_FILENAME = "diabetes_prediction_model.joblib"
+#MODEL_FILENAME = r"C:\Users\USER\Downloads\Machine\diabetes_prediction_model3.joblib"
+MODEL_FILENAME = "diabetes_prediction_model3.joblib"
 
 DEFAULT_FEATURES = [
     'Age',
@@ -91,6 +91,9 @@ with st.sidebar:
     threshold = st.slider("Decision threshold", 0.0, 1.0, 0.5, 0.01)
     st.markdown("---")
     st.caption("Built for clinicians — quick inputs, clear outputs.")
+    st.markdown("---")
+    st.markdown("Developed by Oluwasegun Oluwatosin (tosindataginius)")
+    st.link_button("Visit my LinkedIn Profile", "https://www.linkedin.com/in/oluwatosin-oluwasegun-1a9266288/")
 
 # --- Load model ---
 model, load_err = load_model(MODEL_FILENAME)
@@ -171,6 +174,8 @@ elif page == "Feature Info":
         with st.expander(f):
             st.markdown(f"**Definition:** {FEATURE_EXPLANATIONS.get(f, 'Description not available.')} ")
             st.markdown("---")
+            st.markdown("Developed by Oluwasegun Oluwatosin (tosindataginius)")
+            st.link_button("Visit my LinkedIn Profile", "https://www.linkedin.com/in/oluwatosin-oluwasegun-1a9266288/")
 
 elif page == "Model Info":
     st.markdown("# Model and deployment information")
@@ -183,6 +188,9 @@ elif page == "Model Info":
 else:
     st.markdown("# About this app")
     st.markdown("Clinician-focused diabetes risk predictor based on lifestyle, vitals, and lab data.")
+    st.markdown("---")
+    st.markdown("Developed by Oluwasegun Oluwatosin (tosindataginius)")
+    st.link_button("Visit my LinkedIn Profile", "https://www.linkedin.com/in/oluwatosin-oluwasegun-1a9266288/")
 
 st.markdown("---")
 st.caption("This tool aids but does not replace clinical judgment.")
